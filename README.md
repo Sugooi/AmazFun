@@ -1,0 +1,2 @@
+# AmazFun
+Contribution For hackathon
