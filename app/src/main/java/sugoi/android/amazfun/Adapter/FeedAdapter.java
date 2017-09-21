@@ -3,12 +3,14 @@ package sugoi.android.amazfun.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import sugoi.android.amazfun.Interface.ItemClickListener;
@@ -23,6 +25,7 @@ class FeedViewHolder extends ViewHolder implements View.OnClickListener,View.OnL
 {
 
     public TextView txtTitle,txtPubDate,txtContent;
+    public ImageView pro_img;
     private ItemClickListener itemClickListener;
 
     public FeedViewHolder(View itemView)
@@ -31,6 +34,7 @@ class FeedViewHolder extends ViewHolder implements View.OnClickListener,View.OnL
         this.txtTitle =(TextView) itemView.findViewById(R.id.txtTitle);
         this.txtPubDate=(TextView) itemView.findViewById(R.id.txtPubDate);
         this.txtContent=(TextView) itemView.findViewById(R.id.txtContent);
+        this.pro_img=(ImageView) itemView.findViewById(R.id.pro_img);
 
         itemView.setOnClickListener(this);
         itemView.setOnLongClickListener(this);
@@ -79,6 +83,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedViewHolder>
         holder.txtTitle.setText(rssobject.getItems().get(position).getTitle());
         holder.txtPubDate.setText(rssobject.getItems().get(position).getPubDate());
         holder.txtContent.setText(rssobject.getItems().get(position).getContent());
+        holder.pro_img.setImageResource(R.drawable.whilewalker);
+
 
         holder.setItemClickListener(new ItemClickListener() {
             @Override

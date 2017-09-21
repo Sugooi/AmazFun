@@ -10,33 +10,68 @@
     >
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_margin="8dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <TextView
-            android:text="Title"
-            android:id="@+id/txtTitle"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pro_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            android:layout_marginRight="5dp"
+            app:civ_border_color="#FF000000"/>
 
-        <TextView
-            android:text="2017-09-20 "
-            android:id="@+id/txtPubDate"
-            android:textSize="12sp"
-            android:textStyle="italic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
-        <TextView
-            android:text="Content"
-            android:id="@+id/txtContent"
-            android:textSize="14sp"
-            android:textStyle="normal"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="Name"
+                android:id="@+id/name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="2017-09-20 "
+                android:id="@+id/txtPubDate"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:text="Title"
+                android:id="@+id/txtTitle"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:text="Content"
+                android:id="@+id/txtContent"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width=""
+                android:layout_height="" />
+
+        </LinearLayout>
+
 
 
 

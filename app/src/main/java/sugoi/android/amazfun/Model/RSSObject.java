@@ -7,15 +7,19 @@ import java.util.List;
  */
 
 public class RSSObject {
+    public int pro_image;
     public String status;
     public Feed feed;
     public List<Item> items;
 
-    public RSSObject(String status,Feed feed,List<Item> items)
+
+
+    public RSSObject(String status, Feed feed, List<Item> items, int pro_image)
     {
         this.status=status;
         this.feed=feed;
         this.items=items;
+        this.pro_image=pro_image;
     }
     public String getStatus()
     {
@@ -40,6 +44,13 @@ public class RSSObject {
     public void setItems(List<Item> items)
     {
         this.items=items;
+    }
+    public int getPro_image() {
+        return pro_image;
+    }
+
+    public void setPro_image(int pro_image) {
+        this.pro_image = pro_image;
     }
 
 

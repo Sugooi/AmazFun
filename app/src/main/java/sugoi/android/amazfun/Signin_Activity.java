@@ -1,5 +1,6 @@
 package sugoi.android.amazfun;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -38,18 +39,27 @@ public class Signin_Activity extends AppCompatActivity {
 
     SignInButton button;
     FirebaseAuth mAuth;
+    ProgressDialog progress;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activiity_signin);
+        progress = new ProgressDialog(this);
+
+        progress.setTitle("Loading");
+        progress.setMessage("Wait while loading...");
+        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
+// To dismiss the dialog
 
         button=(SignInButton) findViewById(R.id.signinbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progress.show();
                 signIn();
+                progress.dismiss();
             }
         });
         mAuth = FirebaseAuth.getInstance();
@@ -71,6 +81,7 @@ public class Signin_Activity extends AppCompatActivity {
                 if(firebaseAuth.getCurrentUser()!=null)
                 {
                     startActivity(new Intent(Signin_Activity.this,MainActivity.class));
+
                 }
             }
         };
@@ -130,10 +141,13 @@ public class Signin_Activity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
+
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if (result.isSuccess()) {
+
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
