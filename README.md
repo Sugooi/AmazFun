@@ -1,5 +1,3 @@
 # AmazFun
-Contribution For hackathon
+Join Contribution For hackathon project.
 
-
-Hello there how are you?sadfsadfsadfsadfsdf
