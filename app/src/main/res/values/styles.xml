@@ -14,6 +14,9 @@
         <item name="windowActionBar">false</item>
 
         <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/deep_orange_700</item>
+        <item name="colorPrimaryDark">@color/deep_orange_900</item>
+        <item name="colorAccent">@color/orange_700</item>
 
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -48,6 +51,9 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="AppTheme.NoActionBar.Splash">
+        <item name="colorPrimary">@color/deep_orange_700</item>
+        <item name="colorPrimaryDark">@color/deep_orange_900</item>
+        <item name="colorAccent">@color/orange_700</item>
         <item name="android:windowBackground">@drawable/bg</item>
     </style>
 </resources>
