@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">AmazFun</string>
+    <string-array name="Bats">
+        <item>"Adidas"</item>
+        <item>"Nike"</item>
+        <item>"SS"</item>
+        <item>"Gray Nicolas"</item>
+        <item>"GM"</item>
+        <item>"SG"</item>
+        <item>"Puma"</item>
+        <item>"Reebok"</item>
+    </string-array>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
