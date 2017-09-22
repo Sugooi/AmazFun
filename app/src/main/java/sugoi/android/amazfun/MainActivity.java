@@ -62,7 +62,11 @@ public class MainActivity extends AppCompatActivity implements LogoutContract.Vi
                 try{
                     logout();}
                 catch (Exception e){}
-                break;
+                return true;
+            case R.id.action_search_main:
+                UserListingActivity.startActivity(this);
+                return  true;
+
         }
         return super.onOptionsItemSelected(item);
     }
