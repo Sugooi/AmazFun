@@ -5,6 +5,7 @@ package sugoi.android.amazfun.ui.fragments;
  */
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,6 +19,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseUser;
+
+import java.security.spec.ECField;
 
 import sugoi.android.amazfun.R;
 import sugoi.android.amazfun.core.registration.RegisterContract;
@@ -84,7 +87,8 @@ public class RegisterFragment extends Fragment implements View.OnClickListener, 
 
         switch (viewId) {
             case R.id.button_register:
-                onRegister(view);
+                try{
+                onRegister(view);}catch (Exception e){Toast.makeText(getActivity(),"Empty!",Toast.LENGTH_SHORT).show();}
                 break;
         }
     }
