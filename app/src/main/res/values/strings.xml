@@ -20,4 +20,18 @@
 <string name="logout">Logout</string>
 <string name="are_you_sure">Are you sure ?</string>
 <string name="cancel">Cancel</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="Bats">
+        <item>"Adidas"</item>
+        <item>"Nike"</item>
+        <item>"SS"</item>
+        <item>"Gray Nicolas"</item>
+        <item>"GM"</item>
+        <item>"SG"</item>
+        <item>"Puma"</item>
+        <item>"Reebok"</item>
+    </string-array>
 </resources>

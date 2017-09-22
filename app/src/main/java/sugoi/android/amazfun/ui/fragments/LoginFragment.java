@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import sugoi.android.amazfun.MainActivity;
 import sugoi.android.amazfun.R;
 import sugoi.android.amazfun.core.login.LoginContract;
 import sugoi.android.amazfun.core.login.LoginPresenter;
@@ -71,12 +72,12 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Log
         mBtnLogin.setOnClickListener(this);
         mBtnRegister.setOnClickListener(this);
 
-        setDummyCredentials();
+      //  setDummyCredentials();
     }
 
     private void setDummyCredentials() {
-        mETxtEmail.setText("test@test.com");
-        mETxtPassword.setText("123456");
+        mETxtEmail.setText("");
+        mETxtPassword.setText("");
     }
 
     @Override
@@ -109,7 +110,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Log
     public void onLoginSuccess(String message) {
         mProgressDialog.dismiss();
         Toast.makeText(getActivity(), "Logged in successfully", Toast.LENGTH_SHORT).show();
-        UserListingActivity.startActivity(getActivity(),
+        MainActivity.startActivity(getActivity(),
                 Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 

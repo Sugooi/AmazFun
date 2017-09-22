@@ -50,6 +50,20 @@
 </intent-filter>
 
 </service>
+        <activity
+            android:name=".MainActivity"/>
+
+
+        <activity android:name=".Userbase"></activity>
+        <activity android:name=".revenue"></activity>
+        <activity android:name=".sales"></activity>
+        <activity android:name=".salesproducts"></activity>
+        <activity
+            android:name=".salesspcprd"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".productrating"></activity>
+        <activity android:name=".Reports"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
 
 </application>
 

@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.security.spec.ECField;
 
+import sugoi.android.amazfun.MainActivity;
 import sugoi.android.amazfun.R;
 import sugoi.android.amazfun.core.registration.RegisterContract;
 import sugoi.android.amazfun.core.registration.RegisterPresenter;
@@ -120,7 +121,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener, 
     public void onAddUserSuccess(String message) {
         mProgressDialog.dismiss();
         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
-        UserListingActivity.startActivity(getActivity(),
+        MainActivity.startActivity(getActivity(),
                 Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 

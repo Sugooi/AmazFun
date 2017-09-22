@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import sugoi.android.amazfun.MainActivity;
 import sugoi.android.amazfun.R;
 
 /**
@@ -32,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
                     // check if user is already logged in or not
                     if (FirebaseAuth.getInstance().getCurrentUser() != null) {
                         // if logged in redirect the user to user listing activity
-                        UserListingActivity.startActivity(SplashActivity.this);
+                        MainActivity.startActivity(SplashActivity.this);
                     } else {
                         // otherwise redirect the user to login activity
                         LoginActivity.startIntent(SplashActivity.this);
