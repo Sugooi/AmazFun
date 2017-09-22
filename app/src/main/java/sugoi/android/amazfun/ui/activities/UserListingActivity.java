@@ -88,8 +88,11 @@ public class UserListingActivity extends AppCompatActivity implements LogoutCont
                 .setPositiveButton(R.string.logout, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        try {
+
+
                         dialog.dismiss();
-                        mLogoutPresenter.logout();
+                        mLogoutPresenter.logout();}catch (Exception e){}
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
