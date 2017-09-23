@@ -53,7 +53,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return "Home";
         } else if (position == 1) {
-            return "News feed";
+            return "Feed";
         }
         else if(position==2){
             return "Profile";

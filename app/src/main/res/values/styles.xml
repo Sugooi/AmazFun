@@ -9,7 +9,7 @@
         <item name="android:windowBackground">@color/green_100</item>
     </style>
 
-    <style parent="Theme.AppCompat.Light.NoActionBar" name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="windowActionBar">false</item>
 
@@ -19,7 +19,9 @@
         <item name="colorAccent">@color/orange_700</item>
 
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="MaterialSearchViewStyle">
         <!-- Background for the search bar -->
         <item name="searchBackground">@color/colorPrimary</item>
@@ -50,6 +52,7 @@
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="AppTheme.NoActionBar.Splash">
         <item name="colorPrimary">@color/deep_orange_700</item>
         <item name="colorPrimaryDark">@color/deep_orange_900</item>

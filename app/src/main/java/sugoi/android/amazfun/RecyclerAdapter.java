@@ -4,6 +4,8 @@ package sugoi.android.amazfun;
  * Created by Shade on 5/9/2016.
  */
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,6 +16,8 @@ import android.widget.TextView;
 
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+
+
 
     private String[] titles = {"How do we expand business?",
             "How is branding different from marketing?",
@@ -49,6 +53,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
+        Context context;
+
+        public ViewHolder(View itemView, Context context) {
+            super(itemView);
+            this.context = context;
+        }
+
         public int currentItem;
         public ImageView itemImage;
         public TextView itemTitle;
@@ -58,21 +69,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             super(itemView);
             itemImage = (ImageView)itemView.findViewById(R.id.item_image);
             itemTitle = (TextView)itemView.findViewById(R.id.item_title);
-            itemDetail =(TextView)itemView.findViewById(R.id.item_detail);
+            itemDetail =(TextView)itemView.findViewById(R.id.content);
             itemName=(TextView) itemView.findViewById(R.id.name);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
 
-                    Snackbar.make(v, "Click detected on item " + position,
-                            Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-
-                }
-            });
         }
     }
+
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {

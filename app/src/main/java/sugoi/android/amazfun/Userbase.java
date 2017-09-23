@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -29,6 +30,7 @@ public class Userbase extends AppCompatActivity {
         BarChart bb=(BarChart)findViewById(R.id.barchart);
         TextView tt=(TextView)findViewById(R.id.graphhead);
         tt.setText("Customer base in year 2017");
+        ScrollView scrollView=(ScrollView)findViewById(R.id.scrollingraph);
         MaterialSearchView materialSearchView=(MaterialSearchView)findViewById(R.id.search_viewingrh);
         materialSearchView.setVisibility(View.GONE);
         FrameLayout fm=(FrameLayout)findViewById(R.id.toolbar_container);
