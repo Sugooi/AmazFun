@@ -33,7 +33,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new ReportFragment();
        } else if (position == 1) {
-           return new newsfeed();
+           return new NewFeedFragment();
        } else if (position == 2) {
           return new profile();
     }

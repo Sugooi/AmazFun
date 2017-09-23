@@ -86,7 +86,10 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Log
 
         switch (viewId) {
             case R.id.button_login:
-                onLogin(view);
+                try {
+                    onLogin(view);
+
+                }catch (Exception e){}
                 break;
             case R.id.button_register:
                 onRegister(view);
