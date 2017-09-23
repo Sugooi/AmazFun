@@ -9,24 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".followers">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Userbase"></activity>
-        <activity android:name=".revenue"></activity>
-        <activity android:name=".sales"></activity>
-        <activity android:name=".salesproducts"></activity>
+        <activity android:name=".Userbase" />
+        <activity android:name=".revenue" />
+        <activity android:name=".sales" />
+        <activity android:name=".salesproducts" />
         <activity
             android:name=".salesspcprd"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name=".productrating"></activity>
-        <activity android:name=".Reports"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".productrating" />
+        <activity
+            android:name=".Reports"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".following"></activity>
     </application>
 
 </manifest>
