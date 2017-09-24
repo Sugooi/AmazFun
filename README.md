@@ -1,3 +1,5 @@
 # AmazFun
-Join Contribution For hackathon project.
+Join Contribution of CodeWalkers For hackathon project in IIIT Hyderabad.
+
+By CodeWalkers
 
