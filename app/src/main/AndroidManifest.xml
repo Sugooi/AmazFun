@@ -51,7 +51,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Userbase" />
         <activity android:name=".revenue" />
         <activity android:name=".sales" />
@@ -67,6 +67,7 @@
             android:name=".OmniFeedActivity"
             android:label="@string/title_activity_omni_feed"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SupportActiity" />
     </application>
 
 </manifest>
